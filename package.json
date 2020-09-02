@@ -2,15 +2,18 @@
   "name": "shopping_list",
   "version": "1.0.0",
   "description": "Basic CRUD app",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node lib/server.js",
+    "transpile": "babel src/server.js --out-dir lib",
+    "build": "transpile",
+    "dev": "nodemon --exec babel-node src/server.js"
   },
   "author": "Prerak Dholakiya",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
     "nodemon": "^2.0.4"
   },
   "dependencies": {

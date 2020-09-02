@@ -1,0 +1,5 @@
+const MONGO_URI = "mongodb+srv://prerak:prerak123@cluster0.1rqw9.mongodb.net/shoppinglist_db?retryWrites=true&w=majority";
+
+export default {
+    MONGO_URI
+}
